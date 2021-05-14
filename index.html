@@ -1,4 +1,27 @@
 <html>
+   <head>
+      <style>
+         table {
+         font-family: arial, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+         }
+         td, th {
+         border: 1px solid #dddddd;
+         text-align: left;
+         padding: 8px;
+         }
+         tr:nth-child(even) {
+         background-color: #dddddd;
+         }
+         div {
+         padding: 5px;
+         }
+         h3,h2, h4 {
+         text-align:center;
+         }
+      </style>
+   </head>
    <body>
       <div class="form">
          <h3>Form 1</h3>
@@ -7,33 +30,25 @@
             <input class="form_input" name="1" type="text">
          </div>
       </div>
-
       <hr>
-      
       <h3>Form 2</h3>
       <div class="input">
          <label>Input - 2</label><br>
          <input class="form_input" name="2" type="text">
       </div>
-
       <hr>
-
       <h3>Form 3</h3>
       <div class="input">
          <label>Input - n</label><br>
          <input class="form_input_new" name="n" type="email">
       </div>
-
       <hr>
-
       <h3>Buttons</h3>
       <button>Button 1</button>
       <button>
       <span>Button 2</span>
       </button>
-
       <hr>
-
       <h3>Unique forms</h3>
       <div><span><label>Input - 1</label><br></span></div>
       <div class="form name-1 ead3qras">
@@ -43,5 +58,52 @@
       <div class="form name-2 14qrwafqaf">
          <input class="form_input" type="text">
       </div>
+      <hr>
+      <div class="texts">
+         <h2>
+         Texts</h3>
+         <h3>Float</h3>
+         <div class="float">
+            <span>45</span>
+            <span>.06%</span>
+         </div>
+         <h3>Text <small>(get only the first part)</small></h3>
+         <div class="text">
+            needed text
+            <p> text that needs to be avoided</p>
+         </div>
+      </div>
+      <hr>
+      <h3>Checkboxes</h3>
+      <h4>(1 - fix activated checkbox; 2 - find disabled checkbox)</h4>
+      <div class="Checkboxes">
+         <input type="checkbox"></input>
+         <input type="checkbox" disabled></input>
+         <input type="checkbox" checked="true"></input>
+      </div>
+      <hr>
+      <h3>Table</h3>
+      <h4>(1 - get all values by column; 2 - check, only Germany row)</h4>
+      <table>
+         <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+            <th>Check?</th>
+         </tr>
+         <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+            <td><input type="checkbox"></input></td>
+         </tr>
+         <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td><input type="checkbox"></input></td>
+         </tr>
+         </tr>
+      </table>
    </body>
 </html>
