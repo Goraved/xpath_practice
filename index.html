@@ -17,93 +17,121 @@
          div {
          padding: 5px;
          }
-         h3,h2, h4 {
-         text-align:center;
+         .task {
+         border:2px solid darkred;
+         padding: 10px;
+         }
+         h2,  p {
+         color: orangered;
+         }
+         body {
+         width: 60%;
+         text-align: center;
+         margin: auto;
+         }
+         h1, h2,  p, h3, label, span, b, tr,td,th, div {
+         font-family: sans-serif;
          }
       </style>
    </head>
    <body>
-      <div class="form">
-         <h3>Form 1</h3>
+      <h1>XPath locators practice</h1>
+      <div class="task">
+         <h2>Task 1</h2>
+         <p>Find all the inputs using only 1 selector</p>
+         <div class="form">
+            <h3>Form 1</h3>
+            <div class="input">
+               <label>Input - 1</label><br>
+               <input class="form_input" name="1" type="text">
+            </div>
+         </div>
+         <hr>
+         <h3>Form 2</h3>
          <div class="input">
-            <label>Input - 1</label><br>
-            <input class="form_input" name="1" type="text">
+            <label>Input - 2</label><br>
+            <input class="form_input" name="2" type="text">
+         </div>
+         <hr>
+         <h3>Form n</h3>
+         <div class="input">
+            <label>Input - n</label><br>
+            <input class="form_input_new" name="n" type="email">
          </div>
       </div>
       <hr>
-      <h3>Form 2</h3>
-      <div class="input">
-         <label>Input - 2</label><br>
-         <input class="form_input" name="2" type="text">
+      <div class="task">
+         <h2>Task 2</h2>
+         <p>Find all the buttons using only 1 selector</p>
+         <button>Button 1</button>
+         <button>
+         <span>Button 2</span>
+         </button>
       </div>
       <hr>
-      <h3>Form 3</h3>
-      <div class="input">
-         <label>Input - n</label><br>
-         <input class="form_input_new" name="n" type="email">
-      </div>
-      <hr>
-      <h3>Buttons</h3>
-      <button>Button 1</button>
-      <button>
-      <span>Button 2</span>
-      </button>
-      <hr>
-      <h3>Unique forms</h3>
-      <div><span><label>Input - 1</label><br></span></div>
-      <div class="form name-1 ead3qras">
-         <input class="form_input" type="text">
-      </div>
-      <div><span><label>Input - 2</label><br></span></div>
-      <div class="form name-2 14qrwafqaf">
-         <input class="form_input" type="text">
+      <div class="task">
+         <h2>Task 3</h2>
+         <p>Find all the inputs using only 1 selector</p>
+         <div><span><label>Input - 1</label><br></span></div>
+         <div class="form name-1 ead3qras">
+            <input class="form_input" type="text">
+         </div>
+         <div><span><label>Input - 2</label><br></span></div>
+         <div class="form name-2 14qrwafqaf">
+            <input class="form_input" type="text">
+         </div>
       </div>
       <hr>
       <div class="texts">
-         <h2>
-         Texts</h3>
-         <h3>Float</h3>
-         <div class="float">
-            <span>45</span>
-            <span>.06%</span>
-         </div>
-         <h3>Text <small>(get only the first part)</small></h3>
-         <div class="text">
-            needed text
-            <p> text that needs to be avoided</p>
+         <div class="task">
+            <h2>Task 4 (texts)</h2>
+            <p>Get float number</p>
+            <div class="float">
+               <span>45</span>
+               <span>.06%</span>
+            </div>
+            <p>Text <small>(get only the first part)</small></p>
+            <div class="text">
+               needed text
+               <b> text that needs to be avoided</b>
+            </div>
          </div>
       </div>
       <hr>
-      <h3>Checkboxes</h3>
-      <h4>(1 - fix activated checkbox; 2 - find disabled checkbox)</h4>
-      <div class="Checkboxes">
-         <input type="checkbox"></input>
-         <input type="checkbox" disabled></input>
-         <input type="checkbox" checked="true"></input>
+      <div class="task">
+         <h2>Task 5 (checkboxes)</h2>
+         <p>(1 - fix activated checkbox; 2 - find disabled checkbox)</p>
+         <div class="Checkboxes">
+            <input type="checkbox"></input>
+            <input type="checkbox" disabled></input>
+            <input type="checkbox" checked="true"></input>
+         </div>
       </div>
       <hr>
-      <h3>Table</h3>
-      <h4>(1 - get all values by column; 2 - check, only Germany row)</h4>
-      <table>
-         <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
-            <th>Check?</th>
-         </tr>
-         <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-            <td><input type="checkbox"></input></td>
-         </tr>
-         <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-            <td><input type="checkbox"></input></td>
-         </tr>
-         </tr>
-      </table>
+      <div class="task">
+         <h2>Task 6 (table)</h2>
+         <p>(1 - get all values by column; 2 - check, only Germany row)</p>
+         <table>
+            <tr>
+               <th>Company</th>
+               <th>Contact</th>
+               <th>Country</th>
+               <th>Check?</th>
+            </tr>
+            <tr>
+               <td>Alfreds Futterkiste</td>
+               <td>Maria Anders</td>
+               <td>Germany</td>
+               <td><input type="checkbox"></input></td>
+            </tr>
+            <tr>
+               <td>Centro comercial Moctezuma</td>
+               <td>Francisco Chang</td>
+               <td>Mexico</td>
+               <td><input type="checkbox"></input></td>
+            </tr>
+            </tr>
+         </table>
+      </div>
    </body>
 </html>
